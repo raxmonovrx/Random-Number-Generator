@@ -9,10 +9,6 @@
         <title>New Document</title>
     </head>
     <style>
-        *{
-                -webkit-tap-highlight-color: transparent;
-
-        }
         body {
             background-color: #f0f0f0;
             display: flex;
@@ -63,6 +59,13 @@
             outline: none;
             text-align: center;
         }
+        .error {
+            color: red;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            height: 18px; 
+        }
         #btn {
             width: 150px;
             height: 45px;
@@ -77,8 +80,12 @@
             cursor: pointer;
             transition: 0.2s ease-in;
 
+            &:hover {
+                transform: scale(1.05);
+            }
+
             &:active {
-                transform: scale(0.97);
+                transform: scale(1);
             }
         }
         #Natija {
