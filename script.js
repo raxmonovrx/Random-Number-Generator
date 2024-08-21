@@ -1,4 +1,4 @@
-let lastGenerated = 0; // Dastlabki qiymat 0
+let lastGenerated = min; // Dastlabki qiymat 0
 
 document.getElementById('btn').addEventListener('click', function() {
     const min = parseInt(document.getElementById('min').value);
