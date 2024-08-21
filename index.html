@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- ========== CSS ========== -->
+        <link rel="stylesheet" href="#" />
+        <!-- ========== TITLE ========== -->
+        <title>New Document</title>
+    </head>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 520px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        form {
+            display: flex;
+            gap: 20px;
+        }
+        label {
+            font-size: 18px;
+            font-weight: 550;
+            font-family: sans-serif;
+            color: #939393;
+        }
+        .minBox,
+        .maxBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+        }
+        input {
+            width: 150px;
+            height: 45px;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 3px solid #ccc;
+            font-weight: 500;
+            color: #7d7d7d;
+            outline: none;
+            text-align: center;
+        }
+        #btn {
+            width: 150px;
+            height: 45px;
+            border-radius: 10px;
+            border: 3px solid #ccc;
+            background-color: #939393;
+            color: #fff;
+
+            font-size: 22px;
+            font-weight: 550;
+
+            cursor: pointer;
+            transition: 0.2s ease-in;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            &:active {
+                transform: scale(1);
+            }
+        }
+        #Natija {
+            font-size: 32px;
+            font-weight: 800;
+            color: #7d7d7d;
+            font-family: sans-serif;
+            transition: transform 0.2s ease-out;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                max-width: 450px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .container {
+                width: 380px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                width: 300px;
+                padding: 40px 20px;
+            }
+            form {
+                flex-direction: column;
+            }
+            #Natija {
+                font-size: 42px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .container {
+                width: 250px;
+            }
+            #Natija {
+                font-size: 36px;
+            }
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div id="Natija">Natija</div>
+            <form>
+                <div class="minBox">
+                    <label for="min">Min</label>
+                    <input
+                        type="text"
+                        id="min"
+                        name="min"
+                        placeholder="Raqam kiriting"
+                        autocomplete="off"
+                        value="1"
+                    />
+                </div>
+                <div class="maxBox">
+                    <label for="max">Max</label>
+                    <input
+                        type="text"
+                        name="max"
+                        id="max"
+                        placeholder="Raqam kiriting"
+                        autocomplete="off"
+                        value="10"
+                    />
+                </div>
+            </form>
+            <button id="btn">Button</button>
+        </div>
+    </body>
+    <!-- ========== SCRIPT ========== -->
+    <script src="script.js"></script>
+</html>
